@@ -1,0 +1,59 @@
+﻿  BN.cpp
+E:\VSOT\console\BN.cpp(36,22): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(46,22): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(103,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(118,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(130,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(144,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(156,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(173,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(179,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(205,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(211,13): warning C4244: “参数”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(344,22): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(346,26): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(370,25): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(403,22): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(404,28): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(471,18): warning C4244: “=”: 从“__int64”转换到“int”，可能丢失数据
+E:\VSOT\console\BN.cpp(659,12): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+E:\VSOT\console\BN.cpp(664,12): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+E:\VSOT\console\BN.cpp(664,27): error C2397: 从“uint64_t”转换到“int64_t”需要收缩转换
+E:\VSOT\console\BN.cpp(669,5): error C3861: “assert”: 找不到标识符
+E:\VSOT\console\BN.cpp(695,12): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+E:\VSOT\console\BN.cpp(700,23): error C7555: 使用指定的初始值设定项至少需要“/std:c++20”
+E:\VSOT\console\BN.cpp(700,12): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+E:\VSOT\console\BN.cpp(700,29): error C2397: 从“int64_t”转换到“uint64_t”需要收缩转换
+E:\VSOT\console\BN.cpp(705,12): error C4576: 后跟初始值设定项列表的带圆括号类型是一个非标准的显式类型转换语法
+E:\VSOT\console\BN.cpp(738,19): error C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+  graph.cpp
+E:\VSOT\console\main.cpp(204,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\VSOT\console\main.cpp(222,53): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\VSOT\console\main.cpp(362,8): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+E:\VSOT\console\main.cpp(362,2): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+E:\VSOT\console\main.cpp(362,19): error C2238: 意外的标记位于“;”之前
+E:\VSOT\console\main.cpp(365,3): error C2065: “Bits”: 未声明的标识符
+E:\VSOT\console\main.cpp(369,8): error C2065: “Bits”: 未声明的标识符
+E:\VSOT\console\main.cpp(370,5): error C2065: “Bits”: 未声明的标识符
+E:\VSOT\console\main.cpp(374,5): error C2065: “Bits”: 未声明的标识符
+E:\VSOT\console\graph.cpp(22,7): error C2535: “void RWNode::connet_out(RWNode *)”: 已经定义或声明成员函数
+E:\VSOT\console\graph.cpp(30,4): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(30,21): error C2027: 使用了未定义类型“RWEdge”
+E:\VSOT\console\graph.cpp(33,4): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(33,21): error C2027: 使用了未定义类型“RWEdge”
+E:\VSOT\console\graph.cpp(35,3): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(63,60): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  wordtrie.cpp
+E:\VSOT\console\wordtrie.cpp(102,7): error C2011: “IONode”:“class”类型重定义
+E:\VSOT\console\wordtrie.cpp(110,7): error C2011: “intTrie”:“class”类型重定义
+  uses.cpp
+E:\VSOT\console\main.cpp(204,12): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+E:\VSOT\console\main.cpp(222,53): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+E:\VSOT\console\graph.cpp(22,7): error C2535: “void RWNode::connet_out(RWNode *)”: 已经定义或声明成员函数
+E:\VSOT\console\graph.cpp(30,4): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(30,21): error C2027: 使用了未定义类型“RWEdge”
+E:\VSOT\console\graph.cpp(33,4): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(33,21): error C2027: 使用了未定义类型“RWEdge”
+E:\VSOT\console\graph.cpp(35,3): error C2027: 使用了未定义类型“Rgraph”
+E:\VSOT\console\graph.cpp(63,60): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
