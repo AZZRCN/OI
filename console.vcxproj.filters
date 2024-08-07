@@ -51,6 +51,18 @@
     <ClCompile Include="union.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="algs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="martix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="_math.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.cpp">

@@ -130,9 +130,11 @@
     <ClCompile Include="algs.cpp" />
     <ClCompile Include="BN.cpp" />
     <ClCompile Include="graph.cpp" />
+    <ClCompile Include="graph_2.cpp" />
     <ClCompile Include="head1.cpp" />
     <ClCompile Include="kmp.cpp" />
     <ClCompile Include="LSD.cpp" />
+    <ClCompile Include="martix.cpp" />
     <ClCompile Include="repeat.cpp" />
     <ClCompile Include="io.cpp" />
     <ClCompile Include="template.cpp" />
@@ -140,6 +142,7 @@
     <ClCompile Include="wordtrie.cpp" />
     <ClCompile Include="unordered.cpp" />
     <ClCompile Include="uses.cpp" />
+    <ClCompile Include="_math.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="color.hpp" />

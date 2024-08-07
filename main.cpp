@@ -77,30 +77,30 @@ void fillPrism(std::vector<int>& pri,int N) {
 		}
 	}
 }
-void fillPrism_update(std::vector<int>& pri,int N) {
+void fillPrism_update(std::vector<int>& pri,int limit) {
 	std::vector<bool> not_prime;
-	not_prime.resize(static_cast<std::vector<bool, std::allocator<bool>>::size_type>(N) + 1, 0);
+	not_prime.resize(static_cast<std::vector<bool, std::allocator<bool>>::size_type>(limit) + 1, 0);
 	not_prime[4] = true;
 	not_prime[6] = true;
 	not_prime[8] = true;
 	not_prime[9] = true;
 	pri.push_back(2);
 	pri.push_back(3);
-	for (int i = 6; i <= N; i += 6) {
+	for (int i = 6; i <= limit; i += 6) {
 		if (!not_prime[i - 1]) {
 			pri.push_back(i - 1);
 		}
 		for (int j : pri) {
-			if (((i - 1) * j > N)) { break; }
+			if (((i - 1) * j > limit)) { break; }
 			not_prime[static_cast<std::vector<bool, std::allocator<bool>>::size_type>(i - 1) * j] = true;
 			if (((i - 1) % j == 0)) { break; }
 		}
 		if (!not_prime[i + 1]) {
 			pri.push_back(i + 1);
 		}
-		if (i + 1 > N) { break; }
+		if (i + 1 > limit) { break; }
 		for (int j : pri) {
-			if (((i + 1) * j > N)) { break; }
+			if (((i + 1) * j > limit)) { break; }
 			not_prime[static_cast<std::vector<bool, std::allocator<bool>>::size_type>(i + 1) * j] = true;
 			if (((i + 1) % j == 0)) { break; }
 		}
@@ -473,4 +473,7 @@ unsigned long long length_base2(unsigned long long n){
 /*luogu
 #pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4.1,sse4.2,avx,avx2,popcnt,tune=native")
+*/
+//gcd
+/*
 */
