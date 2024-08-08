@@ -138,6 +138,7 @@
     <ClCompile Include="repeat.cpp" />
     <ClCompile Include="io.cpp" />
     <ClCompile Include="template.cpp" />
+    <ClCompile Include="treearray.cpp" />
     <ClCompile Include="union.cpp" />
     <ClCompile Include="wordtrie.cpp" />
     <ClCompile Include="unordered.cpp" />

@@ -474,6 +474,25 @@ unsigned long long length_base2(unsigned long long n){
 #pragma GCC optimize("Ofast,no-stack-protector,unroll-loops,fast-math")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4.1,sse4.2,avx,avx2,popcnt,tune=native")
 */
+/*
+class LIS{//uses dp
+	public:
+	int max_len=0;
+	vector<int> nums;//数字
+	vector<int> li;//最长数值
+	void insert(int O){
+		int i = nums.size();
+		nums.push_back(O);
+		li.push_back(1);
+		for(int j = 0; j < i; j++){
+			if(nums[j] < nums[i]){
+				li[i] = max(li[i],li[j]+1);
+			}
+		}
+		max_len = max(max_len,li[i]);
+	}
+};
+*/
 //gcd
 /*
 */
