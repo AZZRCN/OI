@@ -42,7 +42,7 @@
     <ClCompile Include="kmp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="head1.cpp">
+    <ClCompile Include="head.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="graph.cpp">
@@ -60,7 +60,16 @@
     <ClCompile Include="_math.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="graph_2.cpp">
+    <ClCompile Include="treearray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="linetree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="high_precisionn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gcd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

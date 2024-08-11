@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClCompile Include="algs.cpp" />
     <ClCompile Include="BN.cpp" />
+    <ClCompile Include="gcd.cpp" />
     <ClCompile Include="graph.cpp" />
-    <ClCompile Include="graph_2.cpp" />
-    <ClCompile Include="head1.cpp" />
+    <ClCompile Include="head.cpp" />
+    <ClCompile Include="high_precisionn.cpp" />
     <ClCompile Include="kmp.cpp" />
+    <ClCompile Include="linetree.cpp" />
     <ClCompile Include="LSD.cpp" />
     <ClCompile Include="martix.cpp" />
     <ClCompile Include="repeat.cpp" />
