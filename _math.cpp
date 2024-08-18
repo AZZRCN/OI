@@ -1,3 +1,7 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <numeric>
 static unsigned long long JC(unsigned long long n) {
 	unsigned long long ret = 1;
 	for (unsigned long long i = 2; i <= n; i++)ret *= i;
@@ -66,12 +70,12 @@ public:
 class dcsl_step_base_int_controller {
 public:
     unsigned long long pos;
-    vector<dcsl_step_base_int_with_step> v;
+    std::vector<dcsl_step_base_int_with_step> v;
     void insert(unsigned long long l, unsigned long long r, unsigned long long start, unsigned long long end) {
         v.push_back(dcsl_step_base_int_with_step(l, r, start, end));
     }
     void init() {
-        sort(v.begin(), v.end());
+        std::sort(v.begin(), v.end());
         pos = 1;
     }
     unsigned long long update() {
@@ -119,5 +123,37 @@ int main(){
     }
     // cout << endl;
     cout << ans << " " << maxn;
+}
+*/
+/*
+unsigned long long gcd(unsigned long long L, unsigned long long R)
+{
+    unsigned long long lgo = 0;
+    while (L ^ R)
+    {
+        if (!((L | R) & 1))
+        {
+            L >>= 1;
+            R >>= 1;
+            lgo++;
+            continue;
+        }
+        if (!(L & 1))
+        {
+            L >>= 1;
+            continue;
+        }
+        if (!(R & 1))
+        {
+            R >>= 1;
+            continue;
+        }
+        if (L < R)
+        {
+            std::swap(L, R);
+        }
+        L -= R;
+    }
+    return std::max(L, R) << lgo;
 }
 */

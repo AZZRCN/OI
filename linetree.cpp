@@ -145,3 +145,71 @@ public:
     }
     lineTree() { ; };
 };
+//按照惯例，迫害一下锣鼓(喧天)
+//关于P3373,这里是我的思路
+//定义懒惰标记k,b,如果你不知道意义的话,看这个式子:y=kx+b
+// 传递/添加k标记:
+//  k[now]*=k;
+//  b[now]*=k;
+//  d[now]*=k;
+// 传递/添加b标记
+//  b[now]+=b;
+//  d[now]+=(len*b)(这个不用写了，正常的包含)
+// 传递时先传递k再传递b
+//P3372
+/*
+#include <bits/stdc++.h>
+using namespace std;
+constexpr long long MAXN = 400000;
+class lineTree{
+    public:
+    long long a[MAXN+1],d[MAXN+1],b[MAXN+1],mid,ret;
+    inline long long ls(long long n){return  (n<<1)   ;}
+    inline long long rs(long long n){return ((n<<1)|1);}
+    void build(long long l,long long r,long long p){
+        mid = (l+r)>>1;
+        if(l==r){d[p]=a[l];return;}
+        build(l,  mid,ls(p));
+        build(mid+1,r,rs(p));
+        d[p]=d[ls(p)]+d[rs(p)];
+    }
+    void make_b_mark(long long p,long long l,long long r){
+        mid = (l + r)/2;
+        d[ls(p)] += b[p] * (mid-l+1);
+        d[rs(p)] += b[p] * (r-mid);
+        b[ls(p)] += b[p];
+        b[rs(p)] += b[p];
+        b[p] = 0;
+    }
+    void update(long long l,long long r,long long c,long long s,long long t,long long p){
+        if(l <= s && t <= r){d[p] += (t - s + 1) * c;b[p] += c;return;}
+        mid = (s + t) >> 1;
+        make_b_mark(p,s,t);
+        if(l <= mid) update(l,r,c,s,  mid,ls(p));
+        if(r > mid)  update(l,r,c,mid+1,t,rs(p));
+        d[p] = d[ls(p)] + d[rs(p)];
+    }
+    long long sum(long long l,long long r,long long s,long long t,long long p){
+        if(l <= s && t<=r)return d[p];
+        mid = ((s + t) >> 1),ret=0;
+        make_b_mark(p,s,t);
+        if(l <= mid) ret += sum(l,r,s,mid,ls(p));
+        if(mid < r)  ret += sum(l,r,mid+1,t,rs(p));
+        return ret;
+    }
+    void operator()(long long n){build(1,n,1);}
+    lineTree(){;};
+};
+lineTree t;
+int main(){
+    long long n,m,opt,a,b,c,i;
+    cin >> n >> m;
+    for(i = 1; i <= n; i++){cin >> t.a[i];}
+    t(n);
+    for(i = 1; i <=m ;i++){
+        cin >> opt;
+        if(opt == 1){cin >> a >> b >> c;t.update(a,b,c,1,n,1);}
+        else{cin >> a >> b;cout << t.sum(a,b,1,n,1) << endl;}
+    }
+}
+*/

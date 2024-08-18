@@ -1,4 +1,17 @@
 #include <iostream>
+//speeded 2024Äê8ÔÂ14ÈÕ
+unsigned long long gcd(unsigned long long L, unsigned long long R) {
+    unsigned long long lgo = 0;
+    while (L ^ R) {
+        if (!((L | R) & 1)) { L >>= 1; R >>= 1; lgo++; continue; }
+        if (!(L & 1)) { L >>= 1; continue; }
+        if (!(R & 1)) { R >>= 1; continue; }
+        if (L < R) { R -= L; }
+        else { L -= R; }
+    }
+    return std::max(L, R) << lgo;
+}
+/*
 #define ull unsigned long long
 ull _gcd(ull L, ull R) {
     ull lgo = 0;
@@ -23,6 +36,7 @@ ull _gcd(ull L, ull R) {
     if (L < R) { std::swap(L, R); }
     return L << lgo;
 }
+*/
 //fixed
 /*
 #define ull unsigned long long

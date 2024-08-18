@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="algs.cpp" />
     <ClCompile Include="BN.cpp" />
+    <ClCompile Include="dandiao.cpp" />
     <ClCompile Include="gcd.cpp" />
     <ClCompile Include="graph.cpp" />
     <ClCompile Include="head.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="martix.cpp" />
     <ClCompile Include="repeat.cpp" />
     <ClCompile Include="io.cpp" />
+    <ClCompile Include="stl.cpp" />
     <ClCompile Include="template.cpp" />
     <ClCompile Include="treearray.cpp" />
     <ClCompile Include="union.cpp" />

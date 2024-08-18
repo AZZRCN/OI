@@ -86,7 +86,9 @@ void fillPrism_update(std::vector<int>& pri,int limit) {
 	not_prime[9] = true;
 	pri.push_back(2);
 	pri.push_back(3);
-	for (int i = 6; i <= limit; i += 6) {
+	//注意,这种筛法筛不出5
+	//所以i改成了i-1
+	for (int i = 6; i-1/**/ <= limit; i += 6) {
 		if (!not_prime[i - 1]) {
 			pri.push_back(i - 1);
 		}

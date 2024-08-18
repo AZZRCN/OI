@@ -1,4 +1,5 @@
 #ifndef __builtin_ctz
+/*
 int __builtin_ctzl(unsigned long x) {
     int r = 63;
     x &= ~x + 1;
@@ -9,6 +10,21 @@ int __builtin_ctzl(unsigned long x) {
     if (x & 0x3333333333333333) r -= 2;
     if (x & 0x5555555555555555) r -= 1;
     return r;
+}
+*/
+int __builtin_ctz(int v) {
+    int c = 0;
+    // 使用位操作找到第一个非零位  
+    if ((v & 0x0000FFFF) == 0) { v >>= 16; c += 16; }
+    if ((v & 0x000000FF) == 0) { v >>= 8;  c += 8; }
+    if ((v & 0x0000000F) == 0) { v >>= 4;  c += 4; }
+    if ((v & 0x00000003) == 0) { v >>= 2;  c += 2; }
+    if ((v & 0x00000001) == 0) { v >>= 1;  c += 1; }
+
+    // 此时v必定为1，因为前面的if语句确保了v的最低位为1  
+    // 由于前面的操作已经排除了v为0的情况，所以这里不需要再判断v是否为0  
+
+    return c;
 }
 #endif
 template<int x = 0>
